@@ -8,6 +8,7 @@ export function getFastifyServer(): FastifyInstance {
 
     app.register(fastifySensible)
 
+    app.post('/login', User.login)
     app.post('/register', User.register)
     app.get('/users/:address/nonce', User.getNonce)
     app.get('/', Version.root)
