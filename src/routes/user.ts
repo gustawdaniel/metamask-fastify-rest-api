@@ -4,6 +4,9 @@ import {uid} from "uid";
 import {tokenizeUser, verifyUser} from "../auth/getUser";
 
 export class User {
+    static async root(req: FastifyRequest, res: FastifyReply) {
+        return req.user;
+    }
 
     static async register(req: FastifyRequest<{
         Body: {
