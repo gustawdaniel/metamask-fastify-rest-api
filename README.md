@@ -2,4 +2,4 @@
 
 # Example of Fastify Rest API with login by metamask.
 
-Description published on blog https://preicselab.io
+Description published on blog https://preciselab.io/login-by-metamask-rest-backend-in-fastify/
